@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function alerta() {
+        alert(document.getElementById("nome").value + "\n" + document.getElementById("email").value + "\n" + document.getElementById("msg").value);
+    }
+</script>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        background-color: floralwhite;
+    }
+
+    .content {
+        display: table;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .area {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    form {
+        padding: 150px 100px;
+    }
+
+    fieldset {
+        border-radius: 10px;
+    }
+
+    legend {
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="area">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Formulársio de Contato</legend>
+                    <p>
+                        <label for="">Nome:</label>
+                    <p><input type="text" name="" id="nome"></p>
+                    </p>
+                    <p>
+                        <label for="">E-mail:</label>
+                    <p><input type="email" name="" id="email"></p>
+                    </p>
+                    <p>
+                        <label for="">Menssagem:</label>
+                    <p><textarea id="msg"></textarea></p>
+                    </p>
+                    <button onclick="alerta()">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
